@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20190816
+DTEND;VALUE=DATE:20190817
+DTSTAMP:20180630T164800Z
+ORGANIZER:mailto:9ftmb0k98j67k6hhq9mp2s9s6c@group.calendar.google.com
+UID:2a2djj2vsvp5f22ifo87lociol@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=ijustneedanics@outlook.com;X-NUM-GUESTS=0:mailto:ijustneedanics@out
+ look.com
+CREATED:20180630T161339Z
+DESCRIPTION:Vi ska gifta oss!\n\n\nSpara datumet\, så kommer mer info när d
+ et närmar sig.\n\nOm du har några frågor redan nu\, maila Felix eller Astri
+ d på felix.olof.blanke@gmail.com eller astridehlersson@gmail.com\n\nKramar 
+ från Astrid & Felix\n\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nPlease do not edit this section of the
+  description.\n\nView your event at https://www.google.com/calendar/event?a
+ ction=VIEW&eid=MmEyZGpqMnZzdnA1ZjIyaWZvODdsb2Npb2wgaWp1c3RuZWVkYW5pY3NAb3V0
+ bG9vay5jb20&tok=NTIjOWZ0bWIwazk4ajY3azZoaHE5bXAyczlzNmNAZ3JvdXAuY2FsZW5kYXI
+ uZ29vZ2xlLmNvbTFiN2QwZjBhMzZlNTkxZGRiZGFkMjg3NjhiMDNkYjEzMjg0NWQyNDM&ctz=Eu
+ rope%2FStockholm&hl=en_GB&es=1.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20180630T164759Z
+LOCATION:Lidingö\, Sweden
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Astrid ❤️ Felix
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

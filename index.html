@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"/>
+  <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 </head>
 
 <body>
@@ -44,53 +45,68 @@
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </div>
-
   </div>
 
   <div class="hero-footer">
-
-    <div class="dropdown is-up" style="margin: 5%">
-      <div class="dropdown-trigger">
-        <button class="button is-primary" aria-haspopup="true" aria-controls="dropup" id="dropbutton">
-          <span>Lägg till i min kalender</span>
-          <span class="icon is-small">
-            <i class="fas fa-angle-up" aria-hidden="false"></i>
-          </span>
-        </button>
-      </div>
-      <div class="dropdown-menu" id="dropup" role="menu">
-        <div class="dropdown-content box has-background-white is-active" id="dropup">
-          <div class="dropdown-item is-active">
-            <a href="">
-              Google calendar
-            </a>
-          </div>
-          <hr class="dropdown-divider">
-          <div class="dropdown-item is-active">
-            <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MTJkZzNmbjRscTcwNXZ1cHIzZWM4MTdodTUgNWFic2RycHU4cG1jaW5mOW9mdWFpcXVvN2dAZw&amp;tmsrc=5absdrpu8pmcinf9ofuaiquo7g%40group.calendar.google.com">
-              iCal
-            </a>
-          </div>
-          <hr class="dropdown-divider">
-          <div class="dropdown-item is-active">
-            <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MTJkZzNmbjRscTcwNXZ1cHIzZWM4MTdodTUgNWFic2RycHU4cG1jaW5mOW9mdWFpcXVvN2dAZw&amp;tmsrc=5absdrpu8pmcinf9ofuaiquo7g%40group.calendar.google.com">
-              Outlook
-            </a>
+    <div class="container" style="padding: 5%">
+      <div class="columns is-centered">
+        <div class="column is-one-third">
+          <div class="dropdown is-up">
+            <div class="dropdown-trigger">
+              <button class="button is-primary" aria-haspopup="true" aria-controls="dropup" id="dropbutton">
+                <span>Lägg till i min kalender</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-up" aria-hidden="false"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropup" role="menu">
+              <div class="dropdown-content box has-background-white is-active" id="dropup">
+                <div class="dropdown-item is-active">
+                  <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MmEyZGpqMnZzdnA1ZjIyaWZvODdsb2Npb2wgOWZ0bWIwazk4ajY3azZoaHE5bXAyczlzNmNAZw&tmsrc=9ftmb0k98j67k6hhq9mp2s9s6c%40group.calendar.google.com">
+                    Google calendar
+                  </a>
+                </div>
+                <hr class="dropdown-divider">
+                <div class="dropdown-item is-active">
+                  <a target="_blank" href="webcal://pictures/invite.ics">
+                    iCal
+                  </a>
+                </div>
+                <hr class="dropdown-divider">
+                <div class="dropdown-item is-active">
+                  <a target="_blank" href="webcal://pictures/invite.ics">
+                    Outlook
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <div title="Add to Calendar" class="addeventatc">
+      Add to Calendar
+      <span class="start">07/14/2018 08:00 AM</span>
+      <span class="end">07/14/2018 10:00 AM</span>
+      <span class="timezone">America/Los_Angeles</span>
+      <span class="title">Summary of the event</span>
+      <span class="description">Description of the event</span>
+      <span class="location">Location of the event</span>
+    </div>
+
+
   </div>
+
 
 </section>
 </body>
-
 </html>
+
 <script>
 
     const button = document.querySelector('.button');
