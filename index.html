@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Astrix marriage</title>
+  <title>Astrix marriage 2019.08.16</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
@@ -43,43 +43,67 @@
                 Vi vill gärna att du kommer och firar med oss. Spara datumet, så kommer mer info när det närmar sig.<br><br>
                 Kramar från Astrid & Felix
               </p>
+              <br class="is-hidden-tablet">
+              <br class="is-hidden-tablet">
+              <br class="is-hidden-tablet">
+              <div class="dropdown is-up">
+                <div class="dropdown-trigger">
+                  <button class="button is-primary is-hidden-tablet" aria-haspopup="true" aria-controls="dropup" id="upper">
+                    <span>Lägg till i min kalender</span>
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-up" aria-hidden="false"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="upperDrop" role="menu">
+                  <div class="dropdown-content box has-background-white is-active" id="upperDrop">
+                    <div class="dropdown-item is-active">
+                      <a target="_blank" href="https://calendar.google.com/calendar/r/eventedit?text=Astrid+och+Felix+bröllop&dates=20190816/20190817&details=Vi+ska+gifta+oss!%0A%0ASpara+datumet,+så+kommer+mer+info+när+det+närmar+sig.%0A%0AOm+du+har+frågor+redan+nu,+maila+Astrid+eller+Felix+på+astridehlersson@gmail.com+eller+felix.olof.blanke@gmail.com%0A%0AKramar+från+Astrid+och+Felix&location=Lidingö">
+                        Google calendar
+                      </a>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <div class="dropdown-item is-active">
+                      <a target="_blank" href="pictures/Astrid__Felix.ics">
+                        Importera event
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    
   </div>
 
   <div class="hero-footer">
+
     <div class="container" style="padding: 5%">
       <div class="columns is-centered">
         <div class="column is-one-third">
           <div class="dropdown is-up">
             <div class="dropdown-trigger">
-              <button class="button is-primary" aria-haspopup="true" aria-controls="dropup" id="dropbutton">
+              <button class="button is-primary is-hidden-mobile" aria-haspopup="true" aria-controls="dropup" id="lower">
                 <span>Lägg till i min kalender</span>
                 <span class="icon is-small">
                   <i class="fas fa-angle-up" aria-hidden="false"></i>
                 </span>
               </button>
             </div>
-            <div class="dropdown-menu" id="dropup" role="menu">
-              <div class="dropdown-content box has-background-white is-active" id="dropup">
+            <div class="dropdown-menu" id="lowerDrop" role="menu">
+              <div class="dropdown-content box has-background-white is-active" id="lowerDrop">
                 <div class="dropdown-item is-active">
-                  <a target="_blank" href="https://calendar.google.com/calendar/r/eventedit?text=Astrid+och+Felix+bröllop&dates=20190816T130000Z/20190817T030000Z&details=Vi+ska+gifta+oss!+Spara+datumet,+så+kommer+mer+info+när+det+närmar+sig.%0A%0AOm+du+har+frågor+redan+nu,+maila+Astrid+eller+Felix+på+astridehlersson@gmail.com+eller+felix.olof.blanke@gmail.com%0A%0AKramar+från+Astrid+och+Felix&location=Lidingö">
+                  <a target="_blank" href="https://calendar.google.com/calendar/r/eventedit?text=Astrid+och+Felix+bröllop&dates=20190816/20190817&details=Vi+ska+gifta+oss!%0A%0ASpara+datumet,+så+kommer+mer+info+när+det+närmar+sig.%0A%0AOm+du+har+frågor+redan+nu,+maila+Astrid+eller+Felix+på+astridehlersson@gmail.com+eller+felix.olof.blanke@gmail.com%0A%0AKramar+från+Astrid+och+Felix&location=Lidingö">
                     Google calendar
                   </a>
                 </div>
                 <hr class="dropdown-divider">
                 <div class="dropdown-item is-active">
                   <a target="_blank" href="pictures/Astrid__Felix.ics">
-                    Importera till dator
-                  </a>
-                </div>
-                <hr class="dropdown-divider">
-                <div class="dropdown-item is-active">
-                  <a target="_blank" href="webcal://pictures/invite.ics">
-                    Outlook
+                    Importera event
                   </a>
                 </div>
               </div>
@@ -98,11 +122,23 @@
 
 <script>
 
-    const button = document.querySelector('.button');
-    const dropdown = document.querySelector('.dropdown');
+    const buttons = document.querySelectorAll('.button');
+    const dropdowns = document.querySelectorAll('.dropdown');
 
-    button.addEventListener('click', () => {
-        dropdown.classList.toggle('is-active');
+    var matcher = 0;
+
+    const dropdown1 = dropdowns[0];
+    const dropdown2 = dropdowns[1];
+
+    const button1 = buttons[0];
+    const button2 = buttons[1];
+
+    button1.addEventListener('click', () => {
+      dropdown1.classList.toggle('is-active');
+    });
+
+    button2.addEventListener('click', () => {
+      dropdown2.classList.toggle('is-active');
     });
 
 </script>
